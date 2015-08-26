@@ -1,0 +1,13 @@
+<h1>Listed Articles</h1>
+<div class="container">
+	<ul>
+		<% @articles.each do |article| %>
+			<li>
+				<h4><%= article.title %></h4>
+				<p>
+					<%= article.text %>
+				</p>
+			</li>
+		<% end %>
+	</ul>
+</div>

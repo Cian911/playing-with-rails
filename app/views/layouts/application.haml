@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=CP850", "http-equiv" => "Content-Type"}/
+    %title Cian's First Rails application
+    = stylesheet_link_tag    "stylesheets/screen", :media => "screen, projection"
+    = stylesheet_link_tag    "stylesheets/print", :meida => "print"
+    /[if IE]
+      = stylesheet_link_tag  "stylesheets/ie", :media => "screen, projection" 
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+

@@ -1,0 +1,16 @@
+.container
+  .title
+    %h2 New Article
+  .article-body
+    = form_for :article, url: articles_path do |f|
+      %p
+        = f.label :title
+        %br/
+        = f.text_field :title
+      %p
+        = f.label :text
+        %br/
+        = f.text_area :text
+      %p
+        = f.submit
+  = link_to 'Back', articles_path

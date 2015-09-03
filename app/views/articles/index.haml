@@ -1,0 +1,8 @@
+%h1 Listed Articles
+.container
+  %ul
+    - @articles.each do |article|
+      %li
+        %h4= article.title
+        %p
+          = article.text

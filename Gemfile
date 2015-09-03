@@ -8,13 +8,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 3.2.12'
 gem 'mysql2'
 # Let's use haml as our front end
-gem 'haml-rails'
 # Dependenccies to help convert existing html views to haml
-group :development do
-  gem 'hpricot'
-  gem 'ruby_parser'
-end
-
 gem 'ey_config', '0.0.6'
 gem 'jquery-rails', '~> 3.0'
 gem 'rails_autolink', '~> 1.1'
@@ -63,5 +57,7 @@ end
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 group :development, :test do
-
+  gem 'haml-rails'
+  gem 'hpricot'
+  gem 'ruby_parser'
 end

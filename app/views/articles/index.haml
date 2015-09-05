@@ -3,6 +3,4 @@
   %ul
     - @articles.each do |article|
       %li
-        %h4= article.title
-        %p
-          = article.text
+        = link_to("#{article.title}", "#{articles_path}/#{article.id}") 

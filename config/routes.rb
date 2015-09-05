@@ -1,5 +1,7 @@
 Listr::Application.routes.draw do
 
+  get "about/index"
+
   resources :products
 
 

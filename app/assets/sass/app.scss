@@ -1,0 +1,31 @@
+/* Main css compiler app */
+@import 'partials/mixins';
+@import 'partials/variables';
+
+body {
+	font-family: $font-family;
+}
+
+#all {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto 0;
+	width: 600px / 960px * 100%;
+	float: left;
+
+	#header {
+		h1 { color: $blue; }
+	}
+}
+
+#aside {
+	width: 300px / 960px * 100%;
+	float: right;
+
+	#sidebar {
+		width: 100%;
+		height:400px;
+		background-color: $off-white;
+		@include border-radius(4px);
+	}
+}

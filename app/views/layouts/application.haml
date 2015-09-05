@@ -3,11 +3,22 @@
   %head
     %meta{:content => "text/html; charset=CP850", "http-equiv" => "Content-Type"}/
     %title Cian's First Rails application
-    = stylesheet_link_tag    "stylesheets/screen", :media => "screen, projection"
-    = stylesheet_link_tag    "stylesheets/print", :meida => "print"
+    = stylesheet_link_tag    "app"
     /[if IE]
-      = stylesheet_link_tag  "stylesheets/ie", :media => "screen, projection" 
+      = stylesheet_link_tag  "ie", :media => "screen, projection" 
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-
+    #all
+      #header
+        %h1
+          %span.intro Cian's
+          Programming
+          %span.branding Blog
+        %p.sample In Rails..
+      #content
+        - if alerted = alert
+          %p#alert= alerted
+        = yield
+    #aside
+      #sidebar
